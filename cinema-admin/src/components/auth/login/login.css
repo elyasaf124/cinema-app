@@ -1,0 +1,47 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 20px;
+  padding: 40px 80px;
+  border-radius: 5px;
+}
+
+.login-input {
+  outline: none;
+  font-size: 16px;
+}
+
+.login-label {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.login-btn {
+  background-color: green;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fail-log {
+  color: red;
+  font-size: 18px;
+}

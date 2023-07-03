@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+}
+
+.header-conainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.right-header {
+  width: 30%;
+}
+
+.white-space {
+  width: 30%;
+}
+
+.hello-admin {
+  color: black;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-logo {
+  cursor: pointer;
+  width: 30%;
+  text-align: center;
+}
+
+.hello-text {
+  cursor: pointer;
+}
+
+.logo-header {
+  width: 170px;
+  height: 120px;
+}
+
+.hello-admin.logOut {
+  cursor: pointer;
+}

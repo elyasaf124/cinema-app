@@ -1,0 +1,44 @@
+.showtime-controller {
+  padding-bottom: 300px;
+}
+
+.title-control {
+  text-align: center;
+}
+
+.add-showtime-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-showtime-form {
+  display: flex;
+  gap: 30px;
+}
+
+.list-details-ul-box {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 40px;
+  background: #cbe2f0;
+  overflow-x: hidden;
+  max-height: 280px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.add-btn-container {
+  margin-top: 50px;
+}
+
+.add-btn {
+  background-color: #6bb8e8;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+}

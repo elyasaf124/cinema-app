@@ -1,0 +1,31 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-movie {
+  padding-bottom: 100px;
+}
+
+.update-movie {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.update-movie-form {
+  display: flex;
+}
+
+.update-movie-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  gap: 40px;
+  width: 100%;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
