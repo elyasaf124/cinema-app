@@ -1,0 +1,78 @@
+.sortOfTicketItem {
+  width: 440px;
+}
+.sort-of-ticket-item-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  position: relative;
+}
+
+.right-ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-icon {
+  font-size: 22px;
+}
+
+.left-ticket {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
+}
+
+.left-ticket-row-top {
+  display: flex;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-line {
+  width: 100%;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
+}
+
+.sub-left-ticket {
+  display: flex;
+  /* justify-content: space-between; */
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 3px;
+  padding-bottom: 5px;
+}
+
+.delete-ticket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 5px;
+  border: none;
+  background-color: black;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  color: white;
+  margin-right: 15px;
+}
+
+.cupon-btn {
+  font-size: 12px;
+  color: white !important;
+  background-color: #f44336 !important;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-right: 45px;
+  margin-top: 5px;
+  cursor: pointer;
+}

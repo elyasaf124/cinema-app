@@ -1,0 +1,97 @@
+.room {
+  background-color: #cbe8fc;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.level-order {
+  background-color: #161438;
+}
+
+.level-order-container {
+  width: 80%;
+  margin: 0 auto;
+  color: #c7eafc;
+  display: flex;
+  /* gap: 40px; */
+}
+
+.level-order-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 60px 0px 60px;
+  cursor: pointer;
+}
+
+.level-order-box.active {
+  background-color: #2e2c4c;
+}
+
+.level-order-text {
+  padding-bottom: 5px;
+}
+
+.movie-details {
+  background-color: #1d1d48;
+}
+
+.movie-details-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+
+.movie-details-img-container {
+  margin: auto 0;
+}
+
+.movie-details-img {
+  max-height: 62px;
+  display: flex;
+}
+
+.movie-details-box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.movie-details-box-title {
+  margin: 0;
+}
+
+.sub-details {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.separator {
+  color: red;
+}
+.sub-details-cinema {
+  background-color: #ffc500;
+  color: #100839;
+  padding: 4px;
+}
+
+.sub-details.row-two {
+  color: #ababab;
+  font-size: 14px;
+}
+
+.logo-nav-img-order-page {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  height: 100px;
+  cursor: pointer;
+}

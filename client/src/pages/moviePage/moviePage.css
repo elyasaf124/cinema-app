@@ -1,0 +1,173 @@
+.movie-page {
+  background-color: #daeefc;
+  width: 100%;
+}
+
+.movie-page-container {
+  width: 88%;
+  /* overflow: hidden; */
+  padding-top: 150px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  display: flex;
+}
+
+.movie-page-item {
+  max-width: 100%;
+}
+
+.movie-page-item-title {
+  color: #e72241;
+  font-weight: 800;
+  font-size: 1.6em;
+}
+
+.img-trailer-container {
+  display: flex;
+  gap: 30px;
+  height: 700px;
+}
+
+.youtube-container {
+  flex: 0 0 66.666667%;
+}
+
+.movie-page-img {
+  flex: 0 0 33.333333%;
+}
+
+.description-title {
+  margin-top: 60px;
+  margin-bottom: 17px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #1d1d49;
+}
+
+.description-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-container {
+  width: 65.666%;
+  line-height: 2;
+  font-size: 17px;
+  color: #1d1d48;
+}
+
+.description-text {
+  margin-left: 40px;
+}
+
+.details {
+  width: 33.3333333%;
+}
+
+.details-movie-page-ul {
+  padding: 0;
+  list-style: none;
+  line-height: 2;
+}
+
+.details-movie-page-li {
+  padding: 0;
+}
+
+.details-movie-page-li b {
+  font-size: 1em;
+  color: #1d1d49;
+}
+
+.movie-page-share {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.movie-page-share-text {
+  color: #1d1d49;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.movie-page-icons-container {
+  display: flex;
+  gap: 10px;
+}
+
+.movie-page-icon {
+  color: #1d1d48;
+  font-size: 24px;
+}
+
+.movie-page-order-ticket {
+  margin-top: 150px;
+  width: 100%;
+}
+
+.movie-page-order-ticket-inputs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-page-order-ticket-title-container {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1d1d48;
+  margin-bottom: 50px;
+}
+
+.movie-page-order-ticket-input {
+  background: rgba(255, 255, 255, 0.4);
+  color: #1d1d49;
+  padding: 20px 40px 20px 20px;
+  font-size: 22px;
+  box-shadow: 0px 5px 7px -8px #292929;
+  font-weight: bold;
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.movie-page-order-ticket-input.active .arrow-down {
+  display: none;
+}
+
+.arrow-down {
+  height: 10px;
+}
+
+.movie-page-order-ticket-input.active {
+  background: #1d1d48 !important;
+  color: #cbe8fc !important;
+}
+
+.list-details-ul-movie-page {
+  list-style-type: none;
+  padding-right: 10px;
+  line-height: 1.8;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.cinema-list {
+  border-top: 1px solid rgba(166, 156, 156, 0.873);
+  background: #1d1d48;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  color: #cbe8fc;
+  max-height: 280px;
+  overflow-y: scroll;
+}
+
+.list-details-li-movie-page:hover {
+  font-size: 24px;
+  font-weight: bold;
+}

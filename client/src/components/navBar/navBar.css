@@ -1,0 +1,206 @@
+.Nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+}
+
+.navber-container {
+  width: 88%;
+  margin: 0 auto;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 5px;
+  padding-top: 25px;
+  transition: all 0.1s ease-in;
+}
+
+.barIcon {
+  color: #cbe8fc;
+  font-size: 2.4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.ul-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+
+.logo-nav {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  top: 0;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.logo-nav-img {
+  height: 108px;
+  width: 150px;
+}
+
+.li {
+  font-size: 1.5rem;
+  font-size: 22px;
+  color: #cbe8fc;
+  font-family: "Meoded-Pashut-Pro", sans-serif;
+}
+
+.right-nav {
+  width: 47%;
+}
+
+.logo-nav {
+  width: 30%;
+  text-align: center;
+}
+
+.logo-nav-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  width: 40%;
+  position: relative;
+}
+
+.search-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  padding: 12px 20px;
+  position: relative;
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+.search-span {
+  color: #cee9fa;
+  font-size: 24px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Meoded-Pashut-Pro";
+  opacity: 0.5;
+  letter-spacing: 0.3px;
+}
+
+.search-icon {
+  color: #cbe8fc;
+  font-size: 22px;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 10px;
+}
+
+.search-container-active {
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  transition: width 0.3s;
+}
+.close-icon-active {
+  color: #161438;
+  font-size: 20px;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+.search-input-active {
+  border: none;
+  outline: none;
+  width: 60%;
+  background: #bfe2fa;
+  color: #161438;
+  font-size: 20px;
+  height: 52px;
+  padding-right: 11px;
+  padding-left: 29px;
+  height: 50px;
+  position: relative;
+}
+
+.search-ul {
+  border-top: 1px solid #e72141;
+  position: absolute;
+  top: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #bfe2fa;
+  width: 60%;
+  height: 200px;
+  padding-right: 11px;
+  padding-left: 29px;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+  color: #161438;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-li:hover {
+  color: #e72141;
+  font-size: larger;
+}
+
+.order-ticket-container {
+  background-color: #e72141;
+  font-size: 24px;
+  padding: 12px 18px;
+  color: white;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.order-ticket-container:hover {
+  padding-bottom: 30px;
+  background-color: #cee9fa;
+  color: #161438;
+}
+
+.order-ticket-btn {
+  margin: 0;
+  font-family: "Meoded-Pashut-Pro", sans-serif;
+}
+
+.con {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 18px;
+  display: flex;
+  gap: 100px;
+}

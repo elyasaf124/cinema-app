@@ -1,0 +1,77 @@
+.sortOfTicket {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sort-of-tickets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.sort-of-tickets-title {
+  color: red;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.email-input-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.email-input-text {
+  font-weight: bold;
+}
+
+.email-input {
+  border: 1px solid rgba(0, 0, 0, 0.364);
+  border-radius: 3px;
+  color: inherit;
+  background-color: inherit;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-align: start;
+  direction: ltr;
+  width: 100%;
+}
+
+.btns-container {
+  margin-top: 30px;
+}
+
+.back-btn {
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background-color: #6c6c88 !important;
+  color: #cbe8fc;
+  height: 53px;
+  /* padding: 15px 146px; */
+}
+
+.back-sub-text {
+  font-size: 18px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}

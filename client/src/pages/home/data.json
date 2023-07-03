@@ -1,0 +1,772 @@
+[
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e1f",
+    "hour": "10:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e20",
+    "hour": "11:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e1f",
+    "hour": "12:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e20",
+    "hour": "13:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e1f",
+    "hour": "14:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e20",
+    "hour": "15:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e21",
+    "hour": "12:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e24",
+    "hour": "13:20",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e25",
+    "hour": "14:30",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e21",
+    "hour": "12:10",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e24",
+    "hour": "13:30",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e25",
+    "hour": "14:50",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e26",
+    "hour": "15:10",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e27",
+    "hour": "16:20",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e28",
+    "hour": "17:30",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e26",
+    "hour": "15:20",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e27",
+    "hour": "16:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e28",
+    "hour": "17:10",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e29",
+    "hour": "18:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e2a",
+    "hour": "19:40",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e29",
+    "hour": "18:05",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e2a",
+    "hour": "19:10",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e29",
+    "hour": "18:20",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e2a",
+    "hour": "19:25",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2b",
+    "hour": "20:10",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc8"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2c",
+    "hour": "21:25",
+    "date": "26/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc1"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2d",
+    "hour": "10:45",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2e",
+    "hour": "11:00",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2d",
+    "hour": "10:10",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2e",
+    "hour": "11:20",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2d",
+    "hour": "10:35",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2e",
+    "hour": "11:15",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2f",
+    "hour": "12:40",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccb"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e30",
+    "hour": "13:40",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecca"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e31",
+    "hour": "14:20",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccc"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e23",
+    "hour": "15:10",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccd"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "16:40",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecce"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "17:45",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccf"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e1f",
+    "hour": "18:55",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e20",
+    "hour": "19:50",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e1f",
+    "hour": "18:45",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e20",
+    "hour": "19:55",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e1f",
+    "hour": "18:35",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e20",
+    "hour": "19:15",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e21",
+    "hour": "20:15",
+    "date": "27/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e24",
+    "hour": "10:20",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e25",
+    "hour": "11:40",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e26",
+    "hour": "12:40",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e27",
+    "hour": "13:35",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e28",
+    "hour": "14:20",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e29",
+    "hour": "15:10",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e2a",
+    "hour": "16:40",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2b",
+    "hour": "17:10",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc8"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2c",
+    "hour": "18:25",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc1"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2d",
+    "hour": "19:05",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2e",
+    "hour": "20:00",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2f",
+    "hour": "21:00",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccb"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e30",
+    "hour": "22:10",
+    "date": "28/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecca"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e31",
+    "hour": "10:40",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccc"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e23",
+    "hour": "11:40",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccd"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "12:40",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecce"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "12:50",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccf"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e1f",
+    "hour": "13:40",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e20",
+    "hour": "14:40",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc3"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e21",
+    "hour": "15:40",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e24",
+    "hour": "16:50",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e25",
+    "hour": "17:40",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc4"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e26",
+    "hour": "18:35",
+    "date": "29/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e27",
+    "hour": "10:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e28",
+    "hour": "11:30",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e29",
+    "hour": "12:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e2a",
+    "hour": "13:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2b",
+    "hour": "14:10",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc8"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2c",
+    "hour": "15:25",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc1"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2d",
+    "hour": "16:45",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2e",
+    "hour": "17:00",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2f",
+    "hour": "18:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccb"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e30",
+    "hour": "19:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecca"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e31",
+    "hour": "20:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccc"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e23",
+    "hour": "21:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccd"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "22:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecce"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "23:40",
+    "date": "30/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccf"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e27",
+    "hour": "10:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e28",
+    "hour": "11:30",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e29",
+    "hour": "12:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e2a",
+    "hour": "13:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2b",
+    "hour": "14:10",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc8"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2c",
+    "hour": "15:25",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc1"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2d",
+    "hour": "16:45",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2e",
+    "hour": "17:00",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2f",
+    "hour": "18:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccb"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e30",
+    "hour": "19:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecca"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e31",
+    "hour": "20:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccc"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e23",
+    "hour": "21:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccd"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "22:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beecce"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "23:40",
+    "date": "31/03/2023",
+    "movies": "640cbc6f4fabce1fa3beeccf"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e27",
+    "hour": "10:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c06",
+    "roomId": "64143bf034b3aabf5c725e28",
+    "hour": "11:30",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecc5"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e29",
+    "hour": "12:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c07",
+    "roomId": "64143bf034b3aabf5c725e2a",
+    "hour": "13:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecc2"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2b",
+    "hour": "14:10",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecc8"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2c",
+    "hour": "15:25",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecc1"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2d",
+    "hour": "16:45",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e2e",
+    "hour": "17:00",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecc9"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e2f",
+    "hour": "18:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beeccb"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e30",
+    "hour": "19:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecca"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e31",
+    "hour": "20:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beeccc"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e23",
+    "hour": "21:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beeccd"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c05",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "22:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beecce"
+  },
+  {
+    "cinemaIdRef": "640cc5a4e44dff06a2b90c04",
+    "roomId": "64143bf034b3aabf5c725e22",
+    "hour": "23:40",
+    "date": "01/04/2023",
+    "movies": "640cbc6f4fabce1fa3beeccf"
+  }
+]

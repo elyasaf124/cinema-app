@@ -1,0 +1,30 @@
+.goTopHidden {
+  display: none;
+}
+
+.goTop {
+  display: block;
+}
+
+.goTopIcon {
+  position: fixed;
+  border-radius: 50%;
+  bottom: 35px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+}
+
+.goTopIcon:hover {
+  transform: scale(1.1);
+}
+
+.iconTop {
+  font-size: 44px;
+  color: black;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color: white;
+}

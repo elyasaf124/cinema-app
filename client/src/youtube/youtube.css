@@ -1,0 +1,9 @@
+.video-responsive {
+  /* overflow: hidden; */
+  position: relative;
+  height: 700px;
+  width: 1100px;
+}
+
+.video-responsive iframe {
+}

@@ -1,0 +1,65 @@
+.nowInCinema {
+  width: 100%;
+  display: flex;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.nowInCinema-container {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.nowInCinema-list-container {
+}
+
+.nowInCinema-list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nowInCinema-li {
+  list-style-type: none;
+  margin: 0 45px;
+  color: #6c6c88;
+  font-size: 1.2em;
+}
+
+.nowInCinema-li.active {
+  font-size: 48px;
+  font-weight: 900;
+  color: #cbe8fc;
+  float: left;
+  font-family: "Meoded-Pashut-Pro";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 0 0 45px;
+}
+
+.movie-card-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.show-all-lists {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #6c6c88;
+  text-align: center;
+  cursor: pointer;
+}
+
+.show-all-lists-btn {
+  border: none;
+  background-color: inherit;
+  color: #cbe8fc;
+  font-size: 28px;
+  padding: 10px 0;
+  font-weight: bold;
+  font-family: "Meoded-Pashut-Pro";
+  letter-spacing: 0.5px;
+}

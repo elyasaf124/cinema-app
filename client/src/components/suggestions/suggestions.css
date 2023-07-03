@@ -1,0 +1,21 @@
+.suggestions {
+  width: 100%;
+}
+
+.suggestions-container {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.imgs-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.i {
+  width: 49.6%;
+  margin: 7px 0;
+}

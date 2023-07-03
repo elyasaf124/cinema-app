@@ -1,0 +1,230 @@
+.flip-card {
+  height: 380px;
+  width: 220px;
+  perspective: 1000px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background: #cae8fb;
+  transform: rotateY(180deg);
+}
+
+.img-card {
+  width: 100%;
+  height: 100%;
+}
+
+.title-card-movie {
+  position: absolute;
+  right: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  bottom: 20px;
+}
+
+.flip-card-back-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #1d1d49;
+  padding: 10px;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 50px;
+}
+
+.back-card-title {
+  color: #1d1d49;
+  margin: 0;
+}
+
+.youtube-icon {
+  color: red;
+  font-size: 38px;
+  cursor: pointer;
+}
+
+.back-card-sub-title {
+  font-size: 18px;
+  color: #1d1d49;
+  max-width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  direction: ltr;
+  text-align: end;
+  height: 21px;
+}
+
+.desc-movie-card {
+  width: 90%;
+  max-height: 54px;
+  margin: 0;
+  color: #1d1d49;
+  line-height: 18px;
+  overflow: hidden;
+  height: 72px;
+}
+
+.details-movie-card {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 72px;
+  /* max-height: 72px; */
+}
+
+.btns-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-card {
+  font-size: 18px;
+  padding: 10px 0px;
+  font-weight: 800;
+  color: #cae8fb;
+  border: none;
+  cursor: pointer;
+}
+
+.go-page-movie-btn {
+  background-color: #1d1d49;
+}
+
+.order-ticket-btn-card {
+  background-color: #e72141;
+}
+
+.order-movie-card {
+  background: #e72141;
+  height: 100%;
+  position: relative;
+}
+
+/* .delete-icon {
+  background-color: inherit;
+  color: inherit;
+} */
+
+.order-movie-card-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.exit-btn {
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.order-top-row {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputs-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-order {
+  list-style-type: none;
+  color: #1d1d48;
+  background: #cae8fb;
+  padding: 9px 8px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-order-container {
+  position: relative;
+}
+
+.order-top-row-subTitle {
+  font-weight: bold;
+}
+
+.list-details-uls {
+  cursor: pointer;
+  border-top: 2px solid rgba(228, 25, 25, 0.904);
+  position: absolute;
+  top: 20px;
+  list-style: none;
+  background-color: #cbe8fc;
+  width: 100%;
+  height: 100px;
+  max-height: 200px;
+  line-height: 1.2;
+  padding: 0;
+  overflow-y: auto;
+  z-index: 99999999999;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+.list-details-uls.cinema {
+  height: 150px;
+}
+
+.list-details-lis {
+  padding: 2px 12px 2px 12px;
+  color: #1d1d48;
+  display: inline-block;
+  width: 100%;
+  background: none;
+  font-weight: 700;
+  font-family: "Meoded-Pashut-Pro", sans-serif;
+  text-align: start;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.list-details-lis:hover {
+  color: #e72141;
+  font-size: 16px;
+  font-weight: 600;
+}

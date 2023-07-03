@@ -1,0 +1,42 @@
+[
+  {
+    "name": "גלילות",
+    "numsRooms": 5,
+    "address": "גלילות הבנים 6",
+    "activityTime": {
+      "open": "12:00",
+      "close": "23:00"
+    },
+    "accessibility": true
+  },
+  {
+    "name": "ראשלצ",
+    "numsRooms": 6,
+    "address": "ראשון לציון ילדי טהרן",
+    "activityTime": {
+      "open": "12:00",
+      "close": "23:00"
+    },
+    "accessibility": true
+  },
+  {
+    "name": "יוקנעם",
+    "numsRooms": 3,
+    "address": "יוקנעם המרכבה 8",
+    "activityTime": {
+      "open": "12:00",
+      "close": "23:00"
+    },
+    "accessibility": true
+  },
+  {
+    "name": "כפר-סבא",
+    "numsRooms": 5,
+    "address": "כפר סבא הבונים 5",
+    "activityTime": {
+      "open": "12:00",
+      "close": "23:00"
+    },
+    "accessibility": true
+  }
+]

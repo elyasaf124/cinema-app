@@ -1,0 +1,116 @@
+[
+  {
+    "roomNumber": 1,
+    "cinemaId": "640cc5a4e44dff06a2b90c05",
+    "numsRows": 8,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8]
+  },
+  {
+    "roomNumber": 2,
+    "cinemaId": "640cc5a4e44dff06a2b90c05",
+    "numsRows": 8,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8]
+  },
+  {
+    "roomNumber": 3,
+    "cinemaId": "640cc5a4e44dff06a2b90c05",
+    "numsRows": 8,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8]
+  },
+  {
+    "roomNumber": 4,
+    "cinemaId": "640cc5a4e44dff06a2b90c05",
+    "numsRows": 7,
+    "numsSetEachRow": [8, 6, 4, 7, 12, 4, 8]
+  },
+  {
+    "roomNumber": 5,
+    "cinemaId": "640cc5a4e44dff06a2b90c05",
+    "numsRows": 8,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8]
+  },
+  {
+    "roomNumber": 6,
+    "cinemaId": "640cc5a4e44dff06a2b90c05",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 1,
+    "cinemaId": "640cc5a4e44dff06a2b90c04",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 2,
+    "cinemaId": "640cc5a4e44dff06a2b90c04",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 3,
+    "cinemaId": "640cc5a4e44dff06a2b90c04",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 64,
+    "cinemaId": "640cc5a4e44dff06a2b90c04",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 5,
+    "cinemaId": "640cc5a4e44dff06a2b90c04",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 1,
+    "cinemaId": "640cc5a4e44dff06a2b90c06",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 2,
+    "cinemaId": "640cc5a4e44dff06a2b90c06",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 3,
+    "cinemaId": "640cc5a4e44dff06a2b90c06",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 1,
+    "cinemaId": "640cc5a4e44dff06a2b90c07",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 2,
+    "cinemaId": "640cc5a4e44dff06a2b90c07",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 3,
+    "cinemaId": "640cc5a4e44dff06a2b90c07",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 4,
+    "cinemaId": "640cc5a4e44dff06a2b90c07",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  },
+  {
+    "roomNumber": 5,
+    "cinemaId": "640cc5a4e44dff06a2b90c07",
+    "numsRows": 9,
+    "numsSetEachRow": [5, 8, 6, 4, 7, 12, 4, 8, 15]
+  }
+]
