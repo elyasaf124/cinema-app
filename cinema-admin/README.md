@@ -16,6 +16,7 @@ cinema app (Admin area)
 2. Install the required dependencies: `npm install`.
 3. Start the frontend development server: `npm run dev`.
 4. The frontend development server will run on port 3002.
+5. Change url to http://127.0.0.1:3002
 
 ## User Instructions
 - Make sure both the backend server and frontend development server are running.
