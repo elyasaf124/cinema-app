@@ -31,8 +31,11 @@ router.use(protect);
 router
   .route("/findShowTimeByMovieIdNoPop/:movieId")
   .get(restrictTo("admin"), getShowTimeByMovieIdNoPop);
+
 router.route("/").post(restrictTo("admin"), addShowTime);
+
 router.route("/:id").delete(restrictTo("admin"), deleteShowTime);
+
 router
   .route("/update/:showTimeId")
   .patch(restrictTo("admin"), showTimeUpdateSeats);
