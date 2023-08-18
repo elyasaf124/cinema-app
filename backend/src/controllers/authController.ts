@@ -15,7 +15,6 @@ export const auth = (req: any, res: Response, next: NextFunction) => {
 
 export const signToken = (id: string) => {
   console.log("id", id);
-  console.log(process.env.JWT_SECRETT);
   return jwt.sign({ id: id }, process.env.JWT_SECRETT as string, {
     expiresIn: "90d",
   });

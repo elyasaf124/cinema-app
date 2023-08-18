@@ -29,6 +29,7 @@ const ShowTimeController = () => {
 
   const addShowtime = () => {
     axios
+      .create({ withCredentials: true })
       .post(`${baseUrl}/showtimes`, {
         data: showtime,
       })
