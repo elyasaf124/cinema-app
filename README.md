@@ -18,7 +18,7 @@ Cinema app with payments-system via stripe
 1. Clone this repository.
 2. Navigate to the `client` directory: `cd client`.
 3. Install the required dependencies: `npm install`.
-4. Start the frontend development server: `npm run dev`.
+4. Start the frontend development server: `npm start`.
 5. The frontend development server will run on port 3001.
 
 ## User Instructions
