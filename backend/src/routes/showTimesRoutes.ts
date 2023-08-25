@@ -9,10 +9,13 @@ import {
   addShowTime,
   getShowTimeByMovieIdNoPop,
   deleteShowTime,
+  getAndUpdateAllShowTimeDate,
 } from "../controllers/showTimesController";
 import { protect, restrictTo } from "../controllers/authController";
 
 export const router = express.Router();
+
+router.route("/getAndUpdateAllShowTimeDate").patch(getAndUpdateAllShowTimeDate);
 
 router.route("/getShowTime/:showtimeId").get(getshowTimeById);
 

@@ -62,8 +62,24 @@ schedule.scheduleJob("*/14 * * * *", function () {
   }
 });
 
+schedule.scheduleJob("0 0 */5 * *", function () {
+  if (process.env.NODE_ENV === "production") {
+    axios
+      .patch(
+        "https://cinema-api-rgmg.onrender.com/showtimes/getAndUpdateAllShowTimeDate"
+      )
+      .then((res) => {
+        console.log(res + " is here");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+});
+
 app.use(compression());
 app.use(cookieParser());
+// app.use(cors());
 app.use(cors(corsOptions));
 app.use((req, res, next) => {
   // res.header('Access-Control-Allow-Credentials', true);

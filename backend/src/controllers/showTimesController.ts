@@ -157,11 +157,11 @@ export const getShowTimeByMovieId = async (
       // Convert Unix timestamp to JavaScript Date object
       const date = new Date(show.date * 1000);
       // Format date using moment.js to dd/mm/yyyy format
-      const formattedDate = moment(date).format("DD/MM/YYYY");
+      // const formattedDate = moment(date).format("DD/MM/YYYY");
       // Return updated show object with formatted date
-      return { ...show._doc, date: formattedDate };
+      return { ...show._doc, date: date };
     });
-
+    console.log(formattedShowTime);
     res.status(200).json({
       status: "success",
       data: {
@@ -213,5 +213,44 @@ export const showTimeUpdateSeats = async (
     });
   } catch (error) {
     console.log(error);
+  }
+};
+
+export const getAndUpdateAllShowTimeDate = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const tenDaysInSeconds = 10 * 24 * 60 * 60; // 10 days in seconds
+    const nowInSeconds = Math.floor(new Date().getTime() / 1000); // Current time in seconds
+    const endNextTenDays = nowInSeconds + tenDaysInSeconds; // End time within the next 10 days
+
+    // Find all documents that need to be updated
+    const showTimesToUpdate = await ShowTimes.find({
+      date: { $lte: new Date(nowInSeconds * 1000) }, // Filter to find dates in the past
+    });
+
+    // Update each document with a unique random date within the next 10 days
+    const updatePromises = showTimesToUpdate.map(async (showTime) => {
+      const randomDateInSeconds = Math.floor(
+        Math.random() * (endNextTenDays - nowInSeconds) + nowInSeconds
+      );
+
+      // Update the document with the unique random date
+      return ShowTimes.updateOne(
+        { _id: showTime._id },
+        { $set: { date: randomDateInSeconds } }
+      );
+    });
+
+    // Execute all update promises
+    const updateResults = await Promise.all(updatePromises);
+
+    console.log(updateResults.length);
+    res.json({ message: "Show times updated successfully.", updateResults });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "An error occurred." });
   }
 };

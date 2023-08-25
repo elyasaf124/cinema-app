@@ -4,6 +4,8 @@ import axios from "axios";
 import MovieCard from "../../../components/movieCard/MovieCard";
 import UpdateAndDeleteShowtime from "../../../components/updateAndDeleteShowtime/UpdateAndDeleteShowtime";
 import { ICinema, IMovie, IRoom } from "../../../types/movieTypes";
+import moment from "moment";
+
 import { baseUrl } from "../../..";
 
 const ShowTimeController = () => {
@@ -131,7 +133,12 @@ const ShowTimeController = () => {
     if (e.target?.id === "date") {
       const [year, month, day] = e.target.value.split("-");
       const formattedDate = `${day}/${month}/${year}`;
-      return setShowtime((prev) => ({ ...prev, [e.target.id]: formattedDate }));
+      const movieDate = moment(e.target.value).unix();
+      return setShowtime((prev) => ({
+        ...prev,
+        [e.target.id]: movieDate,
+      }));
+      // return setShowtime((prev) => ({ ...prev, [e.target.id]: formattedDate }));
     }
     if (e === "movies") {
       return setShowtime((prev) => ({ ...prev, [e]: val }));

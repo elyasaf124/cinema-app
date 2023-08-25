@@ -96,7 +96,8 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
         .then((res) => {
           console.log(res.data);
           res.data.data.showTime.map(async (el: any) => {
-            const formattedDate = moment.unix(el.date).format("DD/MM/YYYY");
+            console.log(el);
+            const formattedDate = moment(el.date).format("DD/MM/YYYY");
             el.date = formattedDate;
             return el;
           });

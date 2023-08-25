@@ -25,7 +25,7 @@ const showTimesShcema = new mongoose.Schema({
     type: String,
   },
   date: {
-    type: String,
+    type: Number,
   },
   seats: {
     type: Array,
@@ -38,11 +38,12 @@ const showTimesShcema = new mongoose.Schema({
   ],
 });
 
-showTimesShcema.pre("save", function (next): void {
-  const movie: any = this;
-  movie.date = moment(movie.date, "DD/MM/YYYY").unix();
-  next();
-});
+// showTimesShcema.pre("save", async function (next): Promise<void> {
+//   const movie: any = this;
+//   movie.date = await moment(movie.date).unix();
+//   console.log("movieDate", movie.data);
+//   next();
+// });
 
 // Define a pre 'save' hook on the Showtime schema
 showTimesShcema.pre("save", async function (next) {
@@ -55,6 +56,7 @@ showTimesShcema.pre("save", async function (next) {
     roomId: newShowtime.roomId,
     date: newShowtime.date,
   });
+  console.log("existingShowtimes=>", existingShowtimes);
 
   for (const showtime of existingShowtimes) {
     // Check if new showtime overlaps with existing showtime
@@ -76,7 +78,7 @@ showTimesShcema.pre("save", async function (next) {
           newShowtime.hourDetails.end > showtime.hourDetails.end))
     ) {
       // If overlap is found, reject the save operation with an error
-      return next(new Error("Showtime overlaps with existing showtime"));
+      return next(new Error("Showtime overlaps with existing showtime!!"));
     }
   }
 
