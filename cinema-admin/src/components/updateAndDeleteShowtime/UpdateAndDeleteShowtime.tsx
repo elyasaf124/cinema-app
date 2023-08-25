@@ -12,13 +12,14 @@ const UpdateAndDeleteShowtime = ({ movieId }: any) => {
       axios
         .get(`${baseUrl}/showtimes/findShowTimeByMovieId/${movieId[0]._id}`)
         .then((res) => {
+          console.log(res.data.data.showTime);
           setShowtimes(res.data.data.showTime);
         })
         .catch((error) => {
           console.error("Error fetching showtimes:", error);
         });
     }
-  }, []);
+  }, [movieId]);
 
   const deleteShowtime = (id: string) => {
     axios

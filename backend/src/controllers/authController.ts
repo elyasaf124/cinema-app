@@ -176,3 +176,18 @@ export const restrictTo = (...roles: any) => {
     next();
   };
 };
+
+export const stayAwake = async (
+  req: any,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    console.log("stayAwake run!!");
+    res.send("run");
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+    });
+  }
+};

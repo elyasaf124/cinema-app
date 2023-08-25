@@ -94,6 +94,7 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
       axios
         .get(`${baseUrl}/showtimes/findShowTimeByMovieId/${movie._id}`)
         .then((res) => {
+          console.log(res.data);
           res.data.data.showTime.map(async (el: any) => {
             const formattedDate = moment.unix(el.date).format("DD/MM/YYYY");
             el.date = formattedDate;

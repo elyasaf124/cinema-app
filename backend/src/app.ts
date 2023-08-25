@@ -15,6 +15,8 @@ import { router as allRoutes } from "./routes/allRoutes";
 import { router as authRoutes } from "./routes/authRoutes";
 import { Request, Response, NextFunction } from "express";
 import { globalErrorHandlerNew } from "./utilitis/appError";
+import schedule from "node-schedule";
+import axios from "axios";
 
 dotenv.config({ path: __dirname + `./../config.env` });
 
@@ -46,6 +48,20 @@ const corsOptions: any = {
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 export const app = express();
+
+schedule.scheduleJob("*/14 * * * *", function () {
+  if (process.env.NODE_ENV === "production") {
+    axios
+      .get("https://cinema-api-rgmg.onrender.com/auth/stayAwake")
+      .then((res) => {
+        console.log(res + "is here");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+});
+
 app.use(compression());
 app.use(cookieParser());
 app.use(cors(corsOptions));

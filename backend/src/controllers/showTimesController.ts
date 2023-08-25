@@ -78,7 +78,6 @@ export const getshowTimeBydetails = async (
       .populate("movies")
       .sort({ hour: 1 })
       .exec();
-    console.log("s", showTimes);
     res.status(200).json({
       status: "success",
       results: showTimes.length,
@@ -139,30 +138,6 @@ export const getshowTimeById = async (
     console.log(error);
   }
 };
-
-// export const getShowTimeByMovieId = async (
-//   req: Request,
-//   res: Response,
-//   next: NextFunction
-// ) => {
-//   try {
-//     const showTime = await ShowTimes.find({ movies: req.params.movieId })
-//       .populate("roomId")
-//       .populate("movies")
-//       .populate("cinemaIdRef")
-//       .sort({ date: 1 })
-//       .sort({ hour: 1 });
-
-//     res.status(200).json({
-//       status: "success",
-//       data: {
-//         showTime,
-//       },
-//     });
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
 
 export const getShowTimeByMovieId = async (
   req: Request,
