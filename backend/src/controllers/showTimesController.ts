@@ -70,10 +70,14 @@ export const getshowTimeBydetails = async (
 ) => {
   const dateMoment = moment(req.params.date, "DD/MM/YYYY");
   let date = dateMoment.unix();
+  const endDay = date + 86400;
   try {
     const showTimes = await ShowTimes.find({
       cinemaIdRef: req.params.cinemaId,
-      date: date,
+      date: {
+        $gte: date,
+        $lt: endDay,
+      },
     })
       .populate("movies")
       .sort({ hour: 1 })
@@ -211,6 +215,24 @@ export const showTimeUpdateSeats = async (
         showTime,
       },
     });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const updateDateToNumber = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const showTime = await ShowTimes.find({});
+    for (const show of showTime) {
+      //@ts-ignore
+      show.date = parseInt(show.date); // Convert to number
+      await show.save(); // Save the updated movie
+    }
+    res.send("sucess");
   } catch (error) {
     console.log(error);
   }

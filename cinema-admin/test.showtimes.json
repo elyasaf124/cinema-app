@@ -1,0 +1,1634 @@
+[
+  {
+    "_id": {
+      "$oid": "64332126a1e815fdf924df0f"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2a"
+    },
+    "hourDetails": {
+      "start": 1681063240,
+      "end": 1681069600
+    },
+    "hour": "21:00",
+    "date": 1693160739,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecca"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433218da1e815fdf924df25"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2a"
+    },
+    "hourDetails": {
+      "start": 1681029921,
+      "end": 1681036281
+    },
+    "hour": "11:45",
+    "date": 1693307493,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecca"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643321b4a1e815fdf924df2a"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2a"
+    },
+    "hourDetails": {
+      "start": 1681073102,
+      "end": 1681079462
+    },
+    "hour": "23:45",
+    "date": 1693769462,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecca"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643321c9a1e815fdf924df2f"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2a"
+    },
+    "hourDetails": {
+      "start": 1681026024,
+      "end": 1681034844
+    },
+    "hour": "10:40",
+    "date": 1693418527,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332213a1e815fdf924df34"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2d"
+    },
+    "hourDetails": {
+      "start": 1681030818,
+      "end": 1681039638
+    },
+    "hour": "12:00",
+    "date": 1693230358,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332235a1e815fdf924df3d"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2d"
+    },
+    "hourDetails": {
+      "start": 1681072512,
+      "end": 1681081332
+    },
+    "hour": "23:35",
+    "date": 1693106312,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332281a1e815fdf924df42"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2a"
+    },
+    "hourDetails": {
+      "start": 1681033205,
+      "end": 1681042025
+    },
+    "hour": "12:40",
+    "date": 1693150653,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643322afa1e815fdf924df4b"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2a"
+    },
+    "hourDetails": {
+      "start": 1681073414,
+      "end": 1681084274
+    },
+    "hour": "23:50",
+    "date": 1693239068,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc5"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433235ba1e815fdf924df56"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2a"
+    },
+    "hourDetails": {
+      "start": 1681059655,
+      "end": 1681066975
+    },
+    "hour": "20:00",
+    "date": 1693223710,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc7"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643323b7a1e815fdf924df6b"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2e"
+    },
+    "hourDetails": {
+      "start": 1681062338,
+      "end": 1681073678
+    },
+    "hour": "20:45",
+    "date": 1693392569,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecd1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643323c4a1e815fdf924df70"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2b"
+    },
+    "hourDetails": {
+      "start": 1681026351,
+      "end": 1681033431
+    },
+    "hour": "10:45",
+    "date": 1693573385,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecd0"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643323d2a1e815fdf924df75"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e20"
+    },
+    "hourDetails": {
+      "start": 1681033505,
+      "end": 1681042325
+    },
+    "hour": "12:45",
+    "date": 1693432734,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643323dfa1e815fdf924df7a"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e25"
+    },
+    "hourDetails": {
+      "start": 1681033819,
+      "end": 1681042639
+    },
+    "hour": "12:50",
+    "date": 1693622762,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643323f2a1e815fdf924df7f"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e20"
+    },
+    "hourDetails": {
+      "start": 1681033534,
+      "end": 1681042354
+    },
+    "hour": "12:45",
+    "date": 1693185168,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332400a1e815fdf924df84"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2a"
+    },
+    "hourDetails": {
+      "start": 1681019451,
+      "end": 1681028331
+    },
+    "hour": "08:50",
+    "date": 1693017080,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc4"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433240ba1e815fdf924df89"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2e"
+    },
+    "hourDetails": {
+      "start": 1681069501,
+      "end": 1681078381
+    },
+    "hour": "22:45",
+    "date": 1692964730,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc4"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332416a1e815fdf924df8e"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2f"
+    },
+    "hourDetails": {
+      "start": 1681037113,
+      "end": 1681047973
+    },
+    "hour": "13:45",
+    "date": 1693208176,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc5"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332420a1e815fdf924df93"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e27"
+    },
+    "hourDetails": {
+      "start": 1681033523,
+      "end": 1681043183
+    },
+    "hour": "12:45",
+    "date": 1693338855,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc8"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433242ca1e815fdf924df98"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e20"
+    },
+    "hourDetails": {
+      "start": 1681033534,
+      "end": 1681041334
+    },
+    "hour": "12:45",
+    "date": 1693806154,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332445a1e815fdf924dfa2"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e31"
+    },
+    "hourDetails": {
+      "start": 1681065901,
+      "end": 1681073701
+    },
+    "hour": "21:45",
+    "date": 1693263920,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332460a1e815fdf924dfac"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e27"
+    },
+    "hourDetails": {
+      "start": 1681026625,
+      "end": 1681031665
+    },
+    "hour": "10:50",
+    "date": 1693589417,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc9"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332484a1e815fdf924dfb6"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e28"
+    },
+    "hourDetails": {
+      "start": 1681026603,
+      "end": 1681034403
+    },
+    "hour": "10:50",
+    "date": 1693678999,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecce"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433249ba1e815fdf924dfbf"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e29"
+    },
+    "hourDetails": {
+      "start": 1681033826,
+      "end": 1681041626
+    },
+    "hour": "12:50",
+    "date": 1693501350,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecce"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643324aaa1e815fdf924dfc4"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e23"
+    },
+    "hourDetails": {
+      "start": 1681015541,
+      "end": 1681021421
+    },
+    "hour": "07:45",
+    "date": 1693392708,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccc"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643324bba1e815fdf924dfc9"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e23"
+    },
+    "hourDetails": {
+      "start": 1681044358,
+      "end": 1681055698
+    },
+    "hour": "15:45",
+    "date": 1693650265,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecd1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643324c7a1e815fdf924dfce"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e22"
+    },
+    "hourDetails": {
+      "start": 1681015811,
+      "end": 1681022891
+    },
+    "hour": "07:50",
+    "date": 1693434959,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecd0"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643324d6a1e815fdf924dfd3"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e22"
+    },
+    "hourDetails": {
+      "start": 1681019424,
+      "end": 1681027824
+    },
+    "hour": "08:50",
+    "date": 1693266797,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccd"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643324e9a1e815fdf924dfd8"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2e"
+    },
+    "hourDetails": {
+      "start": 1681037144,
+      "end": 1681044944
+    },
+    "hour": "13:45",
+    "date": 1693484876,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332507a1e815fdf924dfe2"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2b"
+    },
+    "hourDetails": {
+      "start": 1681051814,
+      "end": 1681062614
+    },
+    "hour": "17:50",
+    "date": 1693548520,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccb"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332517a1e815fdf924dfe7"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e22"
+    },
+    "hourDetails": {
+      "start": 1681062630,
+      "end": 1681073490
+    },
+    "hour": "20:50",
+    "date": 1693287071,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc5"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332529a1e815fdf924dfec"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e23"
+    },
+    "hourDetails": {
+      "start": 1680994248,
+      "end": 1681002648
+    },
+    "hour": "01:50",
+    "date": 1693234255,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccd"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64332534a1e815fdf924dff1"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e20"
+    },
+    "hourDetails": {
+      "start": 1681012258,
+      "end": 1681020178
+    },
+    "hour": "06:50",
+    "date": 1693294847,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccf"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643325c744f71946375e7d27"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e21"
+    },
+    "hourDetails": {
+      "start": 1681041026,
+      "end": 1681049426
+    },
+    "hour": "14:50",
+    "date": 1693810741,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccd"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643325e944f71946375e7d2c"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e23"
+    },
+    "hourDetails": {
+      "start": 1681055700,
+      "end": 1681063500
+    },
+    "hour": "18:55",
+    "date": 1693758984,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecce"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433260444f71946375e7d35"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e23"
+    },
+    "hourDetails": {
+      "start": 1681015827,
+      "end": 1681021707
+    },
+    "hour": "07:50",
+    "date": 1693635456,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccc"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643335fa44f71946375e7d4b"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2b"
+    },
+    "hourDetails": {
+      "start": 1681117232,
+      "end": 1681125032
+    },
+    "hour": "12:00",
+    "date": 1693040433,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecce"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433364a44f71946375e7d50"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e21"
+    },
+    "hourDetails": {
+      "start": 1681081552,
+      "end": 1681087432
+    },
+    "hour": "02:05",
+    "date": 1693152107,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccc"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433365c44f71946375e7d55"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2d"
+    },
+    "hourDetails": {
+      "start": 1681077911,
+      "end": 1681084271
+    },
+    "hour": "01:05",
+    "date": 1693807950,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecca"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433367944f71946375e7d5f"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2b"
+    },
+    "hourDetails": {
+      "start": 1681081540,
+      "end": 1681089340
+    },
+    "hour": "02:05",
+    "date": 1693784576,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433369544f71946375e7d64"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2b"
+    },
+    "hourDetails": {
+      "start": 1681081207,
+      "end": 1681091767
+    },
+    "hour": "02:00",
+    "date": 1693684005,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc2"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643336a344f71946375e7d69"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e21"
+    },
+    "hourDetails": {
+      "start": 1681117222,
+      "end": 1681127782
+    },
+    "hour": "12:00",
+    "date": 1693362890,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc2"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643336ed44f71946375e7d8e"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e22"
+    },
+    "hourDetails": {
+      "start": 1681081536,
+      "end": 1681090356
+    },
+    "hour": "02:05",
+    "date": 1693723463,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643336f844f71946375e7d93"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e20"
+    },
+    "hourDetails": {
+      "start": 1681081546,
+      "end": 1681092346
+    },
+    "hour": "02:05",
+    "date": 1693724816,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccb"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433370644f71946375e7d98"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e23"
+    },
+    "hourDetails": {
+      "start": 1681081501,
+      "end": 1681092301
+    },
+    "hour": "02:05",
+    "date": 1693566942,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccb"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6433371444f71946375e7d9d"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e23"
+    },
+    "hourDetails": {
+      "start": 1681081515,
+      "end": 1681089315
+    },
+    "hour": "02:05",
+    "date": 1693813834,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecce"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df3b345d37ef9c5abac269"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2b"
+    },
+    "hourDetails": {
+      "start": 1692358540,
+      "end": 1692367360
+    },
+    "hour": "14:35",
+    "date": 1693739840,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df6155a84273e6e7a49f04"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e20"
+    },
+    "hourDetails": {
+      "start": 1692314122,
+      "end": 1692324682
+    },
+    "hour": "02:15",
+    "date": 1693813170,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc2"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df6165a84273e6e7a49f12"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e20"
+    },
+    "hourDetails": {
+      "start": 1692350438,
+      "end": 1692359318
+    },
+    "hour": "12:20",
+    "date": 1693289947,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc4"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df6173a84273e6e7a49f20"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e25"
+    },
+    "hourDetails": {
+      "start": 1692328853,
+      "end": 1692339413
+    },
+    "hour": "06:20",
+    "date": 1693249103,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc2"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df6189a84273e6e7a49f2e"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2f"
+    },
+    "hourDetails": {
+      "start": 1692387015,
+      "end": 1692394815
+    },
+    "hour": "22:30",
+    "date": 1693099227,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecce"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df6197a84273e6e7a49f3c"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2d"
+    },
+    "hourDetails": {
+      "start": 1692368429,
+      "end": 1692375509
+    },
+    "hour": "17:20",
+    "date": 1693135190,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecd0"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df61a7a84273e6e7a49f4a"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2d"
+    },
+    "hourDetails": {
+      "start": 1692350145,
+      "end": 1692361485
+    },
+    "hour": "12:15",
+    "date": 1693178058,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecd1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df61c7a84273e6e7a49f58"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e30"
+    },
+    "hourDetails": {
+      "start": 1692387017,
+      "end": 1692394337
+    },
+    "hour": "22:30",
+    "date": 1693331698,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc7"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df61d7a84273e6e7a49f66"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e26"
+    },
+    "hourDetails": {
+      "start": 1692369032,
+      "end": 1692374912
+    },
+    "hour": "17:30",
+    "date": 1693626796,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccc"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df61e7a84273e6e7a49f74"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e23"
+    },
+    "hourDetails": {
+      "start": 1692369650,
+      "end": 1692376010
+    },
+    "hour": "17:40",
+    "date": 1693163478,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecca"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df61f6a84273e6e7a49f82"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e25"
+    },
+    "hourDetails": {
+      "start": 1692350105,
+      "end": 1692360905
+    },
+    "hour": "12:15",
+    "date": 1693302486,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccb"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64df62f0a84273e6e7a49f90"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e1f"
+    },
+    "hourDetails": {
+      "start": 1692386709,
+      "end": 1692395529
+    },
+    "hour": "22:25",
+    "date": 1693809776,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e78b7f2bd44be055c21c2c"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c06"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2c"
+    },
+    "hourDetails": {
+      "start": 1692853226,
+      "end": 1692861026
+    },
+    "hour": "08:00",
+    "date": 1693293077,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecce"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e868b5938dc7f00ac10188"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e21"
+    },
+    "hourDetails": {
+      "start": 1692956416,
+      "end": 1692964336
+    },
+    "hour": "12:40",
+    "date": 1693033399,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccf"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e868d3938dc7f00ac10198"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e28"
+    },
+    "hourDetails": {
+      "start": 1692956745,
+      "end": 1692962625
+    },
+    "hour": "12:45",
+    "date": 1693049180,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccc"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e868ec938dc7f00ac101aa"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2f"
+    },
+    "hourDetails": {
+      "start": 1692960610,
+      "end": 1692967930
+    },
+    "hour": "13:50",
+    "date": 1693554049,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc7"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e86913938dc7f00ac101b8"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e29"
+    },
+    "hourDetails": {
+      "start": 1692950149,
+      "end": 1692957469
+    },
+    "hour": "10:55",
+    "date": 1693711238,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc7"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e86936938dc7f00ac101d2"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e29"
+    },
+    "hourDetails": {
+      "start": 1692956424,
+      "end": 1692963744
+    },
+    "hour": "12:40",
+    "date": 1693410321,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc7"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e86953938dc7f00ac101e8"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e21"
+    },
+    "hourDetails": {
+      "start": 1692942054,
+      "end": 1692947094
+    },
+    "hour": "08:40",
+    "date": 1693465474,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc9"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e86966938dc7f00ac101fa"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c04"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e27"
+    },
+    "hourDetails": {
+      "start": 1692956413,
+      "end": 1692961453
+    },
+    "hour": "12:40",
+    "date": 1693518265,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc9"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e8750f335f0648f3a71865"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c07"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e2e"
+    },
+    "hourDetails": {
+      "start": 1692916259,
+      "end": 1692922139
+    },
+    "hour": "01:30",
+    "date": 1693729540,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beeccc"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e87804a1c05183fef028b7"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e1f"
+    },
+    "hourDetails": {
+      "start": 1692953107,
+      "end": 1692961927
+    },
+    "hour": "11:45",
+    "date": 1693623537,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc3"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64e88940c0e14f3ce3adbc6d"
+    },
+    "cinemaIdRef": {
+      "$oid": "640cc5a4e44dff06a2b90c05"
+    },
+    "roomId": {
+      "$oid": "64143bf034b3aabf5c725e1f"
+    },
+    "hourDetails": {
+      "start": 1692918006,
+      "end": 1692925326
+    },
+    "hour": "02:00",
+    "date": 1727298000,
+    "seats": [],
+    "movies": [
+      {
+        "$oid": "640cbc6f4fabce1fa3beecc7"
+      }
+    ],
+    "__v": 0
+  }
+]

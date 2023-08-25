@@ -45,7 +45,7 @@ const showTimesShcema = new mongoose.Schema({
 //   next();
 // });
 
-// Define a pre 'save' hook on the Showtime schema
+//Define a pre 'save' hook on the Showtime schema
 showTimesShcema.pre("save", async function (next) {
   console.log("here");
   const newShowtime = this; // 'this' refers to the current Showtime document being saved
