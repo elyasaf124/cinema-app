@@ -55,19 +55,18 @@ const ShowTimeController = () => {
 
         if (error.response.data.status === "fail") {
           alert(error.response.data.msg);
-          setShowtime({
-            cinemaIdRef: undefined,
-            roomId: undefined,
-            hourDetails: {
-              start: undefined,
-              end: undefined,
-            },
-            hour: undefined,
-            date: undefined,
-            seats: [],
-            movies: undefined,
-          });
-          setForm(false);
+          // setShowtime({
+          //   cinemaIdRef: undefined,
+          //   roomId: undefined,
+          //   hourDetails: {
+          //     start: undefined,
+          //     end: undefined,
+          //   },
+          //   hour: undefined,
+          //   date: undefined,
+          //   seats: [],
+          //   movies: undefined,
+          // });
         }
       });
   };
@@ -131,14 +130,11 @@ const ShowTimeController = () => {
       }));
     }
     if (e.target?.id === "date") {
-      const [year, month, day] = e.target.value.split("-");
-      const formattedDate = `${day}/${month}/${year}`;
       const movieDate = moment(e.target.value).unix();
       return setShowtime((prev) => ({
         ...prev,
         [e.target.id]: movieDate,
       }));
-      // return setShowtime((prev) => ({ ...prev, [e.target.id]: formattedDate }));
     }
     if (e === "movies") {
       return setShowtime((prev) => ({ ...prev, [e]: val }));

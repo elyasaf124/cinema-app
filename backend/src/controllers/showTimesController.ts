@@ -63,6 +63,30 @@ export const getAllShowTimes = async (
     console.log(error);
   }
 };
+
+export const getAllShowTimesByCinemaId = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    console.log(req.params.cinemaId);
+    const cinemaId = new mongoose.Types.ObjectId(req.params.cinemaId);
+    const showTimes = await ShowTimes.find({ cinemaIdRef: cinemaId })
+      .populate("movies")
+      .sort({ date: 1 })
+      .exec();
+    res.status(200).json({
+      status: "success",
+      results: showTimes.length,
+      data: {
+        showTimes,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
 export const getshowTimeBydetails = async (
   req: Request,
   res: Response,

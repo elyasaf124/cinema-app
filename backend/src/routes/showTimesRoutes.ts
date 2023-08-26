@@ -11,6 +11,7 @@ import {
   deleteShowTime,
   getAndUpdateAllShowTimeDate,
   updateDateToNumber,
+  getAllShowTimesByCinemaId,
 } from "../controllers/showTimesController";
 import { protect, restrictTo } from "../controllers/authController";
 
@@ -28,6 +29,9 @@ router
   .get(getshowTimeByFulldetails);
 
 router.route("/").get(getAllShowTimes);
+router
+  .route("/getAllShowTimesByCinemaId/:cinemaId")
+  .get(getAllShowTimesByCinemaId);
 
 router.route("/findShowTimeByMovieId/:movieId").get(getShowTimeByMovieId);
 

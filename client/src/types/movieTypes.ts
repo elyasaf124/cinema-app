@@ -31,7 +31,7 @@ export interface IMovie {
 export interface IShowtime {
   _id: string;
   cinemaIdRef: ICinema;
-  date: string;
+  date: number;
   hour: string;
   hourDetails: {
     start: {
