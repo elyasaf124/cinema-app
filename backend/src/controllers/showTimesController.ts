@@ -72,7 +72,11 @@ export const getAllShowTimesByCinemaId = async (
   try {
     console.log(req.params.cinemaId);
     const cinemaId = new mongoose.Types.ObjectId(req.params.cinemaId);
-    const showTimes = await ShowTimes.find({ cinemaIdRef: cinemaId })
+    const currentUnixTimestamp = moment().unix();
+    const showTimes = await ShowTimes.find({
+      cinemaIdRef: cinemaId,
+      date: { $gte: currentUnixTimestamp },
+    })
       .populate("movies")
       .sort({ date: 1 })
       .exec();

@@ -61,17 +61,8 @@ const OrderTicketQuik = () => {
   };
 
   const handleCinemaName = (cinema: ICinema) => {
-    // const startDate = new Date();
-    // const currentDate = new Date(startDate); // create a new Date object with the current date
-    // const formattedDate = currentDate.toLocaleDateString("en-GB", {
-    //   month: "2-digit",
-    //   day: "2-digit",
-    //   year: "numeric",
-    // });
     setCinemaName(cinema.name);
     setIsShownBox1(false);
-    // setCinemaId(cinema._id);
-    // setMovieDate(formattedDate);
     showtimesList(cinema._id);
     if (box2 === false) {
       setBox2(true);
