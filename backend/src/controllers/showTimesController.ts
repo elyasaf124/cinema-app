@@ -184,21 +184,19 @@ export const getShowTimeByMovieId = async (
       .sort({ date: 1 })
       .sort({ hour: 1 });
 
-    // Convert date to dd/mm/yyyy format
-    const formattedShowTime = showTime.map((show: any) => {
-      // Convert Unix timestamp to JavaScript Date object
-      const date = new Date(show.date * 1000);
-      // Format date using moment.js to dd/mm/yyyy format
-      // const formattedDate = moment(date).format("DD/MM/YYYY");
-      // Return updated show object with formatted date
-      return { ...show._doc, date: date };
-    });
-    console.log(formattedShowTime);
+    // // Convert date to dd/mm/yyyy format
+    // const formattedShowTime = showTime.map((show: any) => {
+    //   // Convert Unix timestamp to JavaScript Date object
+    //   const date = new Date(show.date * 1000);
+    //   // Format date using moment.js to dd/mm/yyyy format
+    //   // const formattedDate = moment(date).format("DD/MM/YYYY");
+    //   // Return updated show object with formatted date
+    //   return { ...show._doc, date: date };
+    // });
+    console.log(showTime);
     res.status(200).json({
       status: "success",
-      data: {
-        showTime: formattedShowTime,
-      },
+      showTime,
     });
   } catch (error) {
     console.log(error);

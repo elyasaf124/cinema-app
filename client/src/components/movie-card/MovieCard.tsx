@@ -21,11 +21,10 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
   const [order, setOrder] = useState(false);
   const [show, setShow] = useState<IAllShowTime[]>([]);
   const [showFilter, setShowFilter] = useState<IAllShowTime[]>([]);
-  const [dateFilter, setDateFilter] = useState<IAllShowTime[]>([]);
   const [cinemaName, setcinemaName] = useState("בחר בית קולנוע");
   const [cinemaId, setcinemaId] = useState("");
   const [dateV, setDate] = useState("בחר תאריך");
-  const [dateList, setDateList] = useState<IAllShowTime[]>([]);
+  const [dateList, setDateList] = useState<string[]>([]);
   const [hour, setHour] = useState("בחר שעה");
   const [hourList, setHourList] = useState<IAllShowTime[]>([]);
   const [isShownBox1, setIsShownBox1] = useState(false);
@@ -36,47 +35,31 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
     navigate(`/cinema-city/${movie._id}`);
   };
 
-  const handleCinemaName = (show: IAllShowTime) => {
-    console.log("cinema", show);
-    setcinemaName(show.cinemaIdRef.name);
-    setcinemaId(show.cinemaIdRef._id);
+  const handleCinemaName = (showtime: IAllShowTime) => {
+    setcinemaName(showtime.cinemaIdRef.name);
+    setcinemaId(showtime.cinemaIdRef._id);
     setIsShownBox1(false);
-  };
+    const filterDate = show.filter((show: IAllShowTime) => {
+      console.log(show);
+      return show.cinemaIdRef._id === showtime.cinemaIdRef._id;
+    });
+    let dates: any = [];
 
-  let dateFilterUpdate: IAllShowTime[] = [];
-
-  const getDates = () => {
-    setIsShownBox2(true);
-    let dates: IAllShowTime[] = show.filter(async (show: IAllShowTime) => {
-      return show.date === cinemaId;
+    filterDate.forEach((show: any) => {
+      if (!dates.includes(show.date)) {
+        dates.push(show.date);
+      }
     });
     setDateList(dates);
-    dates.forEach((show: IAllShowTime) => {
-      let alreadyFiltered = false;
-      for (const item of dateFilterUpdate) {
-        if (item.date === show.date) {
-          alreadyFiltered = true;
-          break;
-        }
-      }
-      if (!alreadyFiltered) {
-        dateFilterUpdate.push(show);
-      }
-      setDateFilter(dateFilterUpdate);
-    });
   };
 
-  const handleDate = (show: IAllShowTime) => {
+  const handleDate = (date: string) => {
     setIsShownBox2(false);
-    setDate(show.date);
-  };
-
-  const getHourList = () => {
-    setIsShownBox3(true);
-    let hours = dateList.filter((show: IAllShowTime) => {
-      return show.date === dateV;
+    setDate(date);
+    const showByHour = show.filter((show: IAllShowTime) => {
+      return show.cinemaIdRef._id === cinemaId && show.date === date;
     });
-    setHourList(hours);
+    setHourList(showByHour);
   };
 
   const handleHour = (show: IAllShowTime) => {
@@ -85,8 +68,6 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
     navigate(`/cinema-city/order/${show._id}`);
   };
 
-  let showFilterUpdate: IAllShowTime[] = [];
-
   const toOrderMovie = (movie: IMovie) => {
     let isCancelled = false;
     if (!isCancelled) {
@@ -94,28 +75,38 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
       axios
         .get(`${baseUrl}/showtimes/findShowTimeByMovieId/${movie._id}`)
         .then((res) => {
-          console.log(res.data);
-          res.data.data.showTime.map(async (el: any) => {
-            console.log(el);
-            const formattedDate = moment(el.date).format("DD/MM/YYYY");
-            el.date = formattedDate;
-            return el;
-          });
-
-          res.data.data.showTime.forEach((el: IAllShowTime) => {
-            let alreadyFiltered = false;
-            for (const item of showFilterUpdate) {
-              if (item.cinemaIdRef._id === el.cinemaIdRef._id) {
-                alreadyFiltered = true;
-                break;
-              }
-            }
-            if (!alreadyFiltered) {
-              showFilterUpdate.push(el);
-            }
-          });
-          setShowFilter(showFilterUpdate);
-          setShow(res.data.data.showTime);
+          Promise.all(
+            res.data.showTime.map(async (el: any) => {
+              const formattedDate = await moment
+                .unix(el.date)
+                .format("DD/MM/YYYY");
+              el.date = formattedDate;
+              return el;
+            })
+          )
+            .then((formattedShowTime) => {
+              const showFilterUpdate: IAllShowTime[] = [];
+              formattedShowTime.forEach((el: IAllShowTime) => {
+                let alreadyFiltered = false;
+                for (const item of showFilterUpdate) {
+                  if (item.cinemaIdRef._id === el.cinemaIdRef._id) {
+                    alreadyFiltered = true;
+                    break;
+                  }
+                }
+                if (!alreadyFiltered) {
+                  showFilterUpdate.push(el);
+                }
+              });
+              setShow(formattedShowTime);
+              setShowFilter(showFilterUpdate);
+            })
+            .catch((error) => {
+              console.error("An error occurred while formatting:", error);
+            });
+        })
+        .catch((error) => {
+          console.error("An error occurred while fetching showtimes:", error);
         });
     }
     return () => {
@@ -225,7 +216,7 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
                         ) : null}
                       </div>
                       <div
-                        onMouseEnter={() => getDates()}
+                        onMouseEnter={() => setIsShownBox2(true)}
                         onMouseLeave={() => setIsShownBox2(false)}
                         className="input-order-container"
                       >
@@ -235,14 +226,14 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
                         </div>
                         {isShownBox2 ? (
                           <ul className="list-details-uls">
-                            {dateFilter.map((show: IAllShowTime) => {
+                            {dateList.map((date: string) => {
                               return (
                                 <li
                                   key={nanoid()}
-                                  onClick={() => handleDate(show)}
+                                  onClick={() => handleDate(date)}
                                   className="list-details-lis"
                                 >
-                                  {show.date}
+                                  {date}
                                 </li>
                               );
                             })}
@@ -251,7 +242,7 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
                       </div>
 
                       <div
-                        onMouseEnter={() => getHourList()}
+                        onMouseEnter={() => setIsShownBox3(true)}
                         onMouseLeave={() => setIsShownBox3(false)}
                         className="input-order-container"
                       >
@@ -262,6 +253,7 @@ const MovieCard = ({ movie }: IMoviePROPS) => {
                         {isShownBox3 ? (
                           <ul className="list-details-uls">
                             {hourList.map((show: IAllShowTime) => {
+                              console.log(show);
                               return (
                                 <li
                                   key={nanoid()}

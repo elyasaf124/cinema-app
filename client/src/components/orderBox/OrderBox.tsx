@@ -7,9 +7,11 @@ import { CgSearch } from "react-icons/cg";
 import { BsCalendar } from "@react-icons/all-files/bs/BsCalendar";
 import { BiCameraMovie } from "@react-icons/all-files/bi/BiCameraMovie";
 import { useNavigate } from "react-router-dom";
-import { IAllShowTime, ICinema } from "../../types/movieTypes";
+import { IAllShowTime, ICinema, IShowtime } from "../../types/movieTypes";
 import axios from "axios";
 import { baseUrl } from "../..";
+import moment from "moment";
+import { nanoid } from "nanoid";
 
 interface Idate {
   _id: Number;
@@ -30,7 +32,8 @@ const OrderBox = () => {
   const [cinemaId, setCinemaId] = useState("");
   const [cinemas, setCinemas] = useState<ICinema[]>([]);
   const [showTimes, setShowTimes] = useState([]);
-  const [dateList, setDateList] = useState<Idate[]>([]);
+  const [dateList, setDateList] = useState<string[]>([]);
+  const [showTimesFilterByDate, setShowTimesFilterByDate] = useState([]);
   const [imgSelected, setImgSelected] = useState(
     "https://www.cinema-city.co.il/img/logo.png"
   );
@@ -38,20 +41,20 @@ const OrderBox = () => {
   const navigate = useNavigate();
 
   const handleCinemaName = async (cinema: ICinema) => {
-    const startDate = new Date();
-    const currentDate = new Date(startDate); // create a new Date object with the current date
-    const formattedDate = currentDate.toLocaleDateString("en-GB", {
-      month: "2-digit",
-      day: "2-digit",
-      year: "numeric",
-    });
+    // const startDate = new Date();
+    // const currentDate = new Date(startDate); // create a new Date object with the current date
+    // const formattedDate = currentDate.toLocaleDateString("en-GB", {
+    //   month: "2-digit",
+    //   day: "2-digit",
+    //   year: "numeric",
+    // });
     setCinemaName(cinema.name);
     setIsShownBox1(false);
     setBox1(true);
-    dateFormat();
+    // dateFormat();
     setCinemaId(cinema._id);
-    setMovieDate(formattedDate);
-    showtimesList(cinema._id, formattedDate);
+    setMovieDate("בחירת תאריך");
+    showtimesList(cinema._id);
     if (box2 === false) {
       setBox2(true);
     } else {
@@ -60,9 +63,15 @@ const OrderBox = () => {
     }
   };
 
-  const handleDate = (date: Idate) => {
-    setMovieDate(date.formattedDate);
-    showtimesList(cinemaId, date.formattedDate);
+  const handleDate = (date: string) => {
+    setMovieDate(date);
+    const dateInUnix = moment(date, "DD-MM-YYYY").unix();
+    const showTimesFilterByDate = showTimes.filter((show: IShowtime) => {
+      if (show.date >= dateInUnix && show.date <= dateInUnix + 86400)
+        return show;
+    });
+    setShowTimesFilterByDate(showTimesFilterByDate);
+    showtimesList(cinemaId);
     setIsShownBox2(false);
     if (box3 === false) {
       setBox3(true);
@@ -92,46 +101,37 @@ const OrderBox = () => {
     };
   }, []);
 
-  const showtimesList = (cinemaId: String, date: string) => {
+  const showtimesList = (cinemaId: String) => {
     let isCancelled = false;
     if (!isCancelled) {
-      let encodedDate = encodeURIComponent(date);
       axios
-        .get(`${baseUrl}/showtimes/details/${cinemaId}/${encodedDate}`)
+        .get(`${baseUrl}/showtimes/getAllShowTimesByCinemaId/${cinemaId}`)
         .then((res) => {
           setShowTimes(res.data.data.showTimes);
+          formatDate(res.data.data.showTimes);
         });
     }
     return () => {
       isCancelled = true;
     };
   };
+  const formatDate = (showTimes: IAllShowTime[]) => {
+    let dates: any = [];
 
-  const imgSelect = (showtime: IAllShowTime) => {
-    setImgSelected(showtime.movies[0].Poster);
+    const formatDates = showTimes.map((show: any) => {
+      const formattedDate = moment.unix(show.date).format("DD-MM-YYYY");
+      return formattedDate;
+    });
+    formatDates.forEach((date: any) => {
+      if (!dates.includes(date)) {
+        dates.push(date);
+      }
+    });
+    setDateList(dates);
   };
 
-  const dateFormat = () => {
-    const startDate = new Date(); // gets current date
-    let dateList = [];
-    for (let i = 0; i < 7; i++) {
-      const currentDate = new Date(startDate); // create a new Date object with the current date
-      currentDate.setDate(startDate.getDate() + i); // set the date to the next day
-      const options: Object = {
-        weekday: "short",
-        timeZone: "UTC",
-        locale: "he",
-      };
-      let hebrewDayOfWeek = currentDate.toLocaleDateString("he-IL", options);
-      let hebrewDayOfWeekShort = hebrewDayOfWeek.slice(0, 5);
-      const formattedDate = currentDate.toLocaleDateString("en-GB", {
-        month: "2-digit",
-        day: "2-digit",
-        year: "numeric",
-      });
-      dateList.push({ formattedDate, hebrewDayOfWeekShort, _id: i });
-      setDateList(dateList);
-    }
+  const imgSelect = (showtime: IShowtime) => {
+    setImgSelected(showtime.movies[0].Poster);
   };
 
   return (
@@ -181,15 +181,15 @@ const OrderBox = () => {
             <BsChevronDown className="arrow-down-icon-box active" />
             {isShownBox2 && box2 ? (
               <ul className="list-details-ul-box">
-                {dateList.map((date: Idate) => {
+                {dateList.map((date: string) => {
+                  console.log("AAA", date);
                   return (
                     <li
-                      key={Number(date._id)}
+                      key={date}
                       onClick={() => handleDate(date)}
                       className="list-details-li"
                     >
-                      {`${date.hebrewDayOfWeekShort}   
-                        ${date.formattedDate}`}
+                      {date}
                     </li>
                   );
                 })}
@@ -247,7 +247,7 @@ const OrderBox = () => {
                   />
                 </div>
                 <ul className="choose-movie-uls">
-                  {showTimes.map((showtime: IAllShowTime) => {
+                  {showTimesFilterByDate.map((showtime: IShowtime) => {
                     return (
                       <li
                         className="choose-movie-lis"
