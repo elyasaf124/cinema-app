@@ -6,7 +6,6 @@ interface YoutubeEmbedProps {
   embedId: string;
 }
 const YoutubeEmbed = ({ embedId }: YoutubeEmbedProps) => {
-  console.log(embedId);
   return (
     <div className="video-responsive">
       <iframe

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./moviePage.css";
 import Messages from "../../components/messages/Messages";
 import NavBar from "../../components/navBar/NavBar";
@@ -9,40 +9,26 @@ import { CgFacebook } from "react-icons/cg";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { baseUrl } from "../..";
-
-interface ciname {
-  _id: String;
-  accessibility: boolean;
-  address: String;
-  name: string;
-  numsRooms: number;
-  activityTime: {};
-}
-
-interface date {
-  formattedDate: string;
-  hebrewDayOfWeekShort: String;
-}
+import { IAllShowTime, IMovie } from "../../types/movieTypes";
+import moment from "moment";
 
 const MoviePage = () => {
   const [isShownBox1, setIsShownBox1] = useState(false);
   const [isShownBox2, setIsShownBox2] = useState(false);
   const [isShownBox3, setIsShownBox3] = useState(false);
-  const [box1, setBox1] = useState(false);
   const [box2, setBox2] = useState(false);
-  const [box3, setBox3] = useState(false);
-  const [cinemas, setCinemas] = useState<ciname[]>([]);
-  const [cinemaName, setCinemaName] = useState("בחר בית קולנוע");
-  const [cinemaId, setCinemaId] = useState("");
   const [movieDate, setMovieDate] = useState("בחירת תאריך");
   const [movieHour, setMovieHour] = useState("בחירת שעה");
-  const [houers, setHours] = useState([]);
-  const [showTimes, setShowTimes] = useState([]);
-  const [dateList, setDateList] = useState<date[]>([]);
+  const [houers, setHours] = useState<IAllShowTime[]>([]);
+  const [dateList, setDateList] = useState<string[]>([]);
+  const [show, setShow] = useState<IAllShowTime[]>([]);
+  const [showFilter, setShowFilter] = useState<IAllShowTime[]>([]);
+  const [cinemaName, setcinemaName] = useState("בחר בית קולנוע");
+  const [cinemaId, setcinemaId] = useState("");
 
   const navigate = useNavigate();
   const { movieId } = useParams();
-  const [movie, setMovie] = useState([]);
+  const [movie, setMovie] = useState<IMovie[]>([]);
 
   useEffect(() => {
     let isCancelled = false;
@@ -58,90 +44,76 @@ const MoviePage = () => {
     };
   }, []);
 
-  const showCinemasList = () => {
+  useEffect(() => {
     let isCancelled = false;
     if (!isCancelled) {
-      setIsShownBox1(true);
-      axios.get(`${baseUrl}/cinema`).then((res) => {
-        setCinemas(res.data.data.cinema);
-      });
-    }
-    return () => {
-      isCancelled = true;
-    };
-  };
-
-  const handleCinemaName = (cinema: any) => {
-    const startDate = new Date();
-    const currentDate = new Date(startDate); // create a new Date object with the current date
-    const formattedDate = currentDate.toLocaleDateString("en-GB", {
-      month: "2-digit",
-      day: "2-digit",
-      year: "numeric",
-    });
-    dateFormat();
-    setCinemaId(cinema._id);
-    setCinemaName(cinema.name);
-    setIsShownBox1(false);
-    setBox1(true);
-    if (box2 === false) {
-      setBox2(true);
-    } else {
-      setBox3(false);
-      setMovieDate("בחירת תאריך");
-      setMovieHour("בחירת שעה");
-    }
-  };
-
-  const dateFormat = () => {
-    const startDate = new Date(); // gets current date
-    let dateList = [];
-    for (let i = 0; i < 7; i++) {
-      const currentDate = new Date(startDate); // create a new Date object with the current date
-      currentDate.setDate(startDate.getDate() + i); // set the date to the next day
-      const options: Object = {
-        weekday: "short",
-        timeZone: "UTC",
-        locale: "he",
-      };
-      let hebrewDayOfWeek = currentDate.toLocaleDateString("he-IL", options);
-      let hebrewDayOfWeekShort = hebrewDayOfWeek.slice(0, 5);
-      const formattedDate = currentDate.toLocaleDateString("en-GB", {
-        month: "2-digit",
-        day: "2-digit",
-        year: "numeric",
-      });
-
-      dateList.push({ formattedDate, hebrewDayOfWeekShort });
-      setDateList(dateList);
-    }
-  };
-
-  const handleDate = (date: any) => {
-    let isCancelled = false;
-    if (!isCancelled) {
-      setMovieDate(date.formattedDate);
-      setIsShownBox2(false);
-      let encodedDate = encodeURIComponent(date.formattedDate);
-      setIsShownBox3(false);
-      setMovieHour("בחירת שעה");
       axios
-        .get(
-          `${baseUrl}/showtimes/allDetails/${cinemaId}/${encodedDate}/${movieId}`
-        )
+        .get(`${baseUrl}/showtimes/findShowTimeByMovieId/${movieId}`)
         .then((res) => {
-          console.log(res);
-          setHours(res.data.data.showTimes);
+          Promise.all(
+            res.data.showTime.map(async (el: any) => {
+              const formattedDate = await moment
+                .unix(el.date)
+                .format("DD/MM/YYYY");
+              el.date = formattedDate;
+              return el;
+            })
+          )
+            .then((formattedShowTime) => {
+              const showFilterUpdate: IAllShowTime[] = [];
+              formattedShowTime.forEach((el: IAllShowTime) => {
+                let alreadyFiltered = false;
+                for (const item of showFilterUpdate) {
+                  if (item.cinemaIdRef._id === el.cinemaIdRef._id) {
+                    alreadyFiltered = true;
+                    break;
+                  }
+                }
+                if (!alreadyFiltered) {
+                  showFilterUpdate.push(el);
+                }
+              });
+              setShow(formattedShowTime);
+              setShowFilter(showFilterUpdate);
+            })
+            .catch((error) => {
+              console.error("An error occurred while formatting:", error);
+            });
+        })
+        .catch((error) => {
+          console.error("An error occurred while fetching showtimes:", error);
         });
-      if (box3 === false) {
-        setBox3(true);
-      } else {
-        setMovieHour("בחירת שעה");
-      }
     }
     return () => {
       isCancelled = true;
     };
+  }, []);
+
+  const handleCinemaName = (showtime: IAllShowTime) => {
+    setcinemaName(showtime.cinemaIdRef.name);
+    setcinemaId(showtime.cinemaIdRef._id);
+    setIsShownBox1(false);
+    const filterDate = show.filter((show: IAllShowTime) => {
+      return show.cinemaIdRef._id === showtime.cinemaIdRef._id;
+    });
+    let dates: any = [];
+
+    filterDate.forEach((show: any) => {
+      if (!dates.includes(show.date)) {
+        dates.push(show.date);
+      }
+    });
+    setDateList(dates);
+  };
+
+  const handleDate = (date: string) => {
+    setIsShownBox2(false);
+    setMovieDate(date);
+    const showByHour = show.filter((show: IAllShowTime) => {
+      return show.cinemaIdRef._id === cinemaId && show.date === date;
+    });
+    setHours(showByHour);
+    setBox2(true);
   };
 
   const handleMovieHour = (hour: any) => {
@@ -211,11 +183,13 @@ const MoviePage = () => {
                   </div>
                   <div className="movie-page-order-ticket-inputs-container">
                     <div
-                      onMouseEnter={() => showCinemasList()}
+                      onMouseEnter={() => setIsShownBox1(true)}
                       onMouseLeave={() => setIsShownBox1(false)}
                       className="movie-page-order-ticket-input active"
                     >
-                      סינמה סיטי {cinemaName}
+                      {cinemaName === "בחר בית קולנוע"
+                        ? "בחר בית קולנוע"
+                        : `סינמה סיטי ${cinemaName}`}
                       <img
                         className="arrow-down"
                         src="https://www.cinema-city.co.il/img/arrowdb.png"
@@ -223,14 +197,14 @@ const MoviePage = () => {
                       {isShownBox1 ? (
                         <div className="cinema-list">
                           <ul className="list-details-ul-movie-page">
-                            {cinemas.map((cinema: any) => {
+                            {showFilter.map((show: any) => {
                               return (
                                 <li
-                                  key={cinema._id}
-                                  onClick={() => handleCinemaName(cinema)}
+                                  key={show._id}
+                                  onClick={() => handleCinemaName(show)}
                                   className="list-details-li-movie-page"
                                 >
-                                  סינימה סיטי {cinema.name}
+                                  סינימה סיטי {show.cinemaIdRef.name}
                                 </li>
                               );
                             })}
@@ -252,7 +226,7 @@ const MoviePage = () => {
                         className="arrow-down"
                         src="https://www.cinema-city.co.il/img/arrowdb.png"
                       />
-                      {isShownBox2 && box2 ? (
+                      {isShownBox2 ? (
                         <div className="cinema-list">
                           <ul className="list-details-ul-movie-page">
                             {dateList.map((date: any) => {
@@ -262,8 +236,7 @@ const MoviePage = () => {
                                   onClick={() => handleDate(date)}
                                   className="list-details-li-movie-page"
                                 >
-                                  {`${date.hebrewDayOfWeekShort}   
-                        ${date.formattedDate}`}
+                                  {date}
                                 </li>
                               );
                             })}
@@ -274,18 +247,14 @@ const MoviePage = () => {
                     <div
                       onMouseEnter={() => setIsShownBox3(true)}
                       onMouseLeave={() => setIsShownBox3(false)}
-                      className={
-                        box3
-                          ? "movie-page-order-ticket-input active"
-                          : "movie-page-order-ticket-input"
-                      }
+                      className={"movie-page-order-ticket-input"}
                     >
                       {movieHour}
                       <img
                         className="arrow-down"
                         src="https://www.cinema-city.co.il/img/arrowdb.png"
                       />
-                      {isShownBox3 && box3 ? (
+                      {isShownBox3 ? (
                         <div className="cinema-list">
                           <ul className="list-details-ul-movie-page">
                             {houers.map((hour: any) => {
