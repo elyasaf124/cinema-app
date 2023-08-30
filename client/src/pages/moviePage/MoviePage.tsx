@@ -52,9 +52,7 @@ const MoviePage = () => {
         .then((res) => {
           Promise.all(
             res.data.showTime.map(async (el: any) => {
-              const formattedDate = await moment
-                .unix(el.date)
-                .format("DD/MM/YYYY");
+              const formattedDate = moment.unix(el.date).format("DD/MM/YYYY");
               el.date = formattedDate;
               return el;
             })
