@@ -49,7 +49,7 @@ const corsOptions: any = {
 };
 export const app = express();
 
-schedule.scheduleJob("*/14 * * * *", function () {
+schedule.scheduleJob("*/14 8-18 * * 1-5", function () {
   if (process.env.NODE_ENV === "production") {
     axios
       .get("https://cinema-api-rgmg.onrender.com/auth/stayAwake")
