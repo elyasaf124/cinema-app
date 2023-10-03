@@ -49,7 +49,7 @@ const corsOptions: any = {
 };
 export const app = express();
 
-schedule.scheduleJob("*/1 8-20 * * 0-4", function () {
+schedule.scheduleJob("*/14 8-20 * * 0-4", function () {
   console.log(process.env.NODE_ENV);
   if (process.env.NODE_ENV === "production") {
     axios
