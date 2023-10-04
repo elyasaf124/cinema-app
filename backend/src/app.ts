@@ -50,6 +50,7 @@ const corsOptions: any = {
 export const app = express();
 
 schedule.scheduleJob("*/14 8-18 * * 0-4", function () {
+  console.log("run");
   if (process.env.NODE_ENV === "production") {
     axios
       .get("https://cinema-api-rgmg.onrender.com/auth/stayAwake")
